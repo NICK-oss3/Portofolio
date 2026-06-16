@@ -5,6 +5,82 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Galih Pandu Wicaksono</title>
   <link rel="stylesheet" href="style.css">
+  <style>
+    body {
+  font-family: 'Segoe UI', sans-serif;
+  margin: 0;
+  background: #fdfdfd;
+  color: #333;
+}
+
+header {
+  background: #111;
+  color: white;
+  text-align: center;
+  padding: 2rem;
+}
+
+nav a {
+  color: #fff;
+  margin: 0 15px;
+  text-decoration: none;
+}
+
+section {
+  padding: 2rem;
+}
+
+.timeline {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.event {
+  background: #eee;
+  padding: 1rem;
+  border-left: 4px solid #111;
+}
+
+
+footer {
+  background: #111;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+}
+.gallery-detailed, .videos-detailed {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  margin-bottom: 2rem;
+}
+
+.gallery-detailed .item, .videos-detailed .video-item {
+  background: #f0f0f0;
+  padding: 1rem;
+  border-radius: 8px;
+  text-align: left;
+}
+
+.gallery-detailed img, .videos-detailed video {
+  width: 100%;
+  border-radius: 8px;
+  margin-bottom: 0.5rem;
+}
+
+.gallery-simple {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 15px;
+  text-align: center;
+}
+
+.gallery-simple img, .gallery-simple video {
+  width: 100%;
+  border-radius: 6px;
+}
+  </style>
 </head>
 <body>
   <!-- Header -->

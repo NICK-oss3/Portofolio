@@ -1,67 +1,31 @@
-body {
-  font-family: 'Segoe UI', sans-serif;
-  margin: 0;
-  background: #fdfdfd;
-  color: #333;
-}
-
-header {
-  background: #111;
-  color: white;
-  text-align: center;
-  padding: 2rem;
-}
-
-nav a {
-  color: #fff;
-  margin: 0 15px;
-  text-decoration: none;
-}
-
-section {
-  padding: 2rem;
-}
-
-.timeline {
+.gallery-detailed, .videos-detailed {
   display: flex;
   flex-direction: column;
-  gap: 1.5rem;
+  gap: 2rem;
+  margin-bottom: 2rem;
 }
 
-.event {
-  background: #eee;
+.gallery-detailed .item, .videos-detailed .video-item {
+  background: #f0f0f0;
   padding: 1rem;
-  border-left: 4px solid #111;
+  border-radius: 8px;
+  text-align: left;
 }
 
-.gallery {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 15px;
-}
-
-.gallery img {
+.gallery-detailed img, .videos-detailed video {
   width: 100%;
   border-radius: 8px;
-  box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+  margin-bottom: 0.5rem;
 }
 
-.videos {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 20px;
-  justify-content: center;
-}
-
-.videos video {
-  width: 45%;
-  border-radius: 8px;
-  box-shadow: 0 4px 6px rgba(0,0,0,0.2);
-}
-
-footer {
-  background: #111;
-  color: white;
+.gallery-simple {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 15px;
   text-align: center;
-  padding: 1rem;
+}
+
+.gallery-simple img, .gallery-simple video {
+  width: 100%;
+  border-radius: 6px;
 }
